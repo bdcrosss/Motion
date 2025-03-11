@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #bg {
+            width: 100%;
+            z-index: 0;
+            height: 500px;
+            position: relative;
+            background-image: url('castle bg.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #dragon {
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+
+        #knight {
+            width: 150px;
+            height: 150px;
+            z-index: 1;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+    </style>
+
+    <script src = "motionlab.js" defer></script>
+
+</head>
+
+<body>
+    
+    <p><button onclick="move()">The Knight chases the Dragon!</button>&nbsp;
+        <button onclick="stopMoving()">They Stop!</button></p>
+    <div id="container">
+        
+        <div id="bg">
+            <img id="dragon" src="Transparent Dragon/flyingn0000.bmp" alt="Dragon">
+            <img id="knight" src="Transparent Knight/running nw0000.bmp" alt="Knight">
+        </div>
+
+</body>
+</html>
